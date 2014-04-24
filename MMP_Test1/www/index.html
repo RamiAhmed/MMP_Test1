@@ -1,0 +1,32 @@
+<!doctype html>
+
+<head>
+
+    <title>Right to Rule 0.0.2 - Launcher</title>
+
+    <script language="javascript" type="text/jscript">
+        function doStartGame() {
+            external.app.startGame(function(result) {
+                console.log(String(result));
+            });
+
+        }
+    </script>
+
+    <link rel="stylesheet" href="./style.css" type="text/css" charset="utf-8" />
+
+</head>
+
+
+<body>
+
+    <div id="main_content_container">
+        <h1>Right to Rule 0.0.2</h1>
+
+        <p>Hello world!!</p>
+
+        <a id="startGameButton" href="javascript:doStartGame()">START GAME</a>
+
+    </div>
+
+</body>

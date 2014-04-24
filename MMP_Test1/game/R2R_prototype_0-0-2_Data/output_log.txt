@@ -1,0 +1,31 @@
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dumx.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GTS 250
+    Vendor:   NVIDIA
+    VRAM:     999 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\Ionic.Zip.Reduced.dll (this message is harmless)
+Loading C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\Ionic.Zip.Reduced.dll into Unity Child Domain
+Platform assembly: C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\JsonFx.Json.dll (this message is harmless)
+Loading C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\JsonFx.Json.dll into Unity Child Domain
+Platform assembly: C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
+Loading C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
+Platform assembly: C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\LitJson.dll (this message is harmless)
+Loading C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\LitJson.dll into Unity Child Domain
+Platform assembly: C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\Newtonsoft.Json.dll (this message is harmless)
+Loading C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
+Platform assembly: C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\TETCSharpClient.dll (this message is harmless)
+Loading C:\Users\Rami\Documents\GitHub\MMP_Test1\MMP_Test1\game\R2R_prototype_0-0-2_Data\Managed\TETCSharpClient.dll into Unity Child Domain
+- Completed reload, in  0.120 seconds
+desktop: 1440x900 60Hz; virtual: 1440x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.

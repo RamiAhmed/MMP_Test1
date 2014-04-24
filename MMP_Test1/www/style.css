@@ -1,0 +1,29 @@
+body,html {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+
+    background-color: rgb(230, 255, 255);
+}
+
+h1, p {
+    display: block;
+    width: 30%;
+    margin: 0px auto;
+}
+
+a {
+    display: block;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    width: 200px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: black;
+}

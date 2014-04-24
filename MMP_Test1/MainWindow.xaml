@@ -1,0 +1,63 @@
+﻿<Window     
+    x:Class="MMP_Test1.MainWindow" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:core="clr-namespace:Awesomium.Core;assembly=Awesomium.Core"
+    xmlns:data="http://schemas.awesomium.com/winfx/data"
+    xmlns:awe="http://schemas.awesomium.com/winfx"
+    xmlns:local="clr-namespace:MMP_Test1"
+    Height="800" 
+    Width="1024" 
+    MinWidth="480"
+    MinHeight="300"
+    Title="{Binding Title, ElementName=webControl}"
+    WindowStartupLocation="CenterScreen"
+    Background="{x:Null}"
+    Opacity="1" 
+    AllowsTransparency="True" 
+    WindowStyle="None">
+
+    <Window.Resources>
+        <awe:WebSessionProvider x:Key="mySession" DataPath=".\Cache">
+            <awe:WebSessionProvider.DataSources>
+                <!--<data:ResourceDataSourceProvider x:Key="local" Type="Packed" />-->
+                <!-- 
+                Comment the ResourceDataSourceProvider above and uncomment
+                the following, for a demonstration of using a DirectoryDataSource
+                for loading the files from a directory on disk.
+                -->
+                
+                <data:DirectoryDataSourceProvider 
+                    x:Key="local" 
+                    Directory="../../" 
+                    MaximumSize="10000000" 
+                    Preload="True"/>               
+            </awe:WebSessionProvider.DataSources>
+            
+            <core:WebPreferences 
+                SmoothScrolling="True" 
+                DefaultEncoding="utf-8" />
+        </awe:WebSessionProvider>
+        
+    </Window.Resources>
+
+    <Border SnapsToDevicePixels="True" BorderThickness="1" BorderBrush="Black">
+        <Border.Background>
+            <SolidColorBrush Color="White" Opacity="1" />
+        </Border.Background>
+        <awe:WebControl 
+            Name="webControl" 
+            WebSession="{Binding Source={StaticResource mySession}}" 
+            Source="asset://local/www/index.html"             
+            IsTransparent="True"
+            NativeViewInitialized="webControl_NativeViewInitialized" 
+            ConsoleMessage="webControl_ConsoleMessage"
+            WindowClose="webControl_WindowClose" />
+            <!--                       
+            DocumentReady="webControl_DocumentReady"
+            --> 
+            
+    </Border>
+
+
+</Window>
