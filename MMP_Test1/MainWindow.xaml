@@ -20,11 +20,8 @@
     <Window.Resources>
         <awe:WebSessionProvider x:Key="mySession" DataPath=".\Cache">
             <awe:WebSessionProvider.DataSources>
-                <!--<data:ResourceDataSourceProvider x:Key="local" Type="Packed" />-->
                 <!-- 
-                Comment the ResourceDataSourceProvider above and uncomment
-                the following, for a demonstration of using a DirectoryDataSource
-                for loading the files from a directory on disk.
+                Loading the files from a directory on disk via relative paths.
                 -->
                 
                 <data:DirectoryDataSourceProvider 

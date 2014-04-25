@@ -1,18 +1,11 @@
 <!doctype html>
 <html>
-
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" charset="utf-8">
 <head>
 
     <title>Right to Rule 0.0.2 - Launcher</title>
 
-    <script language="javascript" type="text/jscript">
-        function doStartGame() {
-            external.app.startGame(function(result) {
-                console.log(String(result));
-            });
 
-        }
-    </script>
 
     <link rel="stylesheet" href="./style.css" type="text/css" charset="utf-8" />
 
@@ -21,16 +14,34 @@
 
 <body>
 
-    <div id="main_content_container">
+    <div id="main_content_container" class="container">
         <h1>Right to Rule 0.0.2</h1>
 
         <p>Hello world!!</p>
 
-        <a id="startGameButton" href="javascript:doStartGame()">START GAME</a>
+        <a type="button" class="btn btn-default" href="javascript:doStartGame()">START GAME</a>
+
+        <footer>
+            <p class="text-center text-muted">A game by Alpha Stage Studios - <span class="text-info">www.AlphaStageStudios.com</span></p>
+        </footer>
 
     </div>
 
+    <script src="./js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="./js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <script language="javascript" type="text/javascript">
+        $(function() {
+            //$(".container").append("<p>Hello from jQuery2</p>");
+        });
+
+        function doStartGame() {
+            external.app.startGame(function(result) {
+                console.log(String(result));
+            });
+        }
+    </script>
+
 </body>
-
-
 </html>
