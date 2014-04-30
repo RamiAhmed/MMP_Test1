@@ -6,16 +6,16 @@
     <title>Right to Rule 0.0.2 - Launcher</title>
 
     <!-- Bootstrap stylesheet -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/css/bootstrap.min.css" type="text/css" charset="utf-8" />
 
     <!-- Basic stylesheet -->
-    <link rel="stylesheet" href="./owl-carousel/owl.carousel.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/owl-carousel/owl.carousel.css" type="text/css" charset="utf-8" />
 
      <!-- Default Theme -->
-    <link rel="stylesheet" href="./owl-carousel/owl.theme.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/owl-carousel/owl.theme.css" type="text/css" charset="utf-8" />
 
     <!-- Our own custom stylesheet -->
-    <link rel="stylesheet" href="./style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/style.css" type="text/css" charset="utf-8" />
 
 </head>
 
@@ -51,18 +51,25 @@
     <!-- Load javascript files at bottom for optimization -->
 
     <!-- jQuery 2 -->
-    <script src="./js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!-- Bootstrap javascript -->
-    <script src="./js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!-- Include Owl carousel js plugin -->
-    <script src="./owl-carousel/owl.carousel.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/owl-carousel/owl.carousel.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!-- Our own custom javascript -->
     <script language="javascript" type="text/javascript">
         $(function() {
-            $(".owl-carousel").owlCarousel();
+            $(".owl-carousel").owlCarousel({   
+                singleItem: true,
+                autoplay: 9000,
+                stopOnHover: true,
+                navigation: false,
+                responsive: false,
+                lazyLoad: false,
+                });
         });
 
         function doStartGame() {
