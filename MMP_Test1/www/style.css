@@ -13,22 +13,23 @@ body,html {
     background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/contanter_background.png');
 	background-repeat:no-repeat;
 }
-
+	
+}
 
 .lazyOwl .img-responsive{
-	height: 300px;
-	width: 570px;
+	height: 310px;
+	width: 595px;
 }
 
 .owl-wrapper-outer{
-	
-	margin-top: 56px;
-	margin-left: 15px;
-	height: 300px;
-	width: 570px;
 	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/carosel-box_03.png');
 	background-size:575px 310px;
 	background-repeat:no-repeat;
+	position: fixed;
+	left :15px;
+	top: 20px;
+	height: 300px;
+	width: 570px;
 	
 }
 
@@ -37,6 +38,11 @@ background: #a90641 !important;
 border: 2px solid gray; 
 }
 
+.logo {
+	position: fixed;
+	top: 140px;
+	left: 675px;
+}
 
 .btn-play{
 	height: 60px;
@@ -46,8 +52,13 @@ border: 2px solid gray;
 	left: 685px;
 	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/play_bnt.png');
 }
+.btn-play:hover{
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/play_bnt_hover.png');
+}
 
-
+.btn-play:active{
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/play_bnt_down.png');
+}
 
 .news_contanter{
 	position: fixed;
@@ -67,22 +78,92 @@ border: 2px solid gray;
 
 }
 
-.btn-cog{
+.foot_btn{
 	height: 65px;
 	width: 70px;
 	position: fixed;
-	left: 400px;
-	top:500px;
-	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/cog_bnt.png');
 	background-repeat:no-repeat;
 }
 
+.btn-cog{
+	
+	left: 400px;
+	top:500px;
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/cog_bnt.png');
+}
+
+.btn-cog:hover{
+	
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/cog_bnt_hover.png');
+}
+
+.btn-cog:active{
+	
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/cog_bnt_down.png');
+}
+
 .btn-book{
-	height: 65px;
-	width: 70px;
-	position: fixed;
 	left: 480px;
 	top:500px;
 	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/book_bnt.png');
+}
+
+.btn-book:hover{
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/book_bnt_hover.png');
+}
+
+.btn-book:active{
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/book_bnt_down.png');
+}
+
+
+
+.mini-btn{
+	height: 55px;
+	width: 55px;
+	position: fixed;
 	background-repeat:no-repeat;
 }
+
+.btn-facebook{
+	left: 800px;
+	top:500px;
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/fb_bnt.png');	
+}
+
+.btn-facebook:hover{
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/fb_bnt_hover.png');	
+}
+
+.btn-facebook:active{
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/fb_bnt_down.png');	
+}
+
+.btn-tvitter{
+	left: 860px;
+	top:500px;
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/tv_bnt.png');
+}
+
+.btn-tvitter:hover{
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/tv_bnt_hover.png');
+}
+
+.btn-tvitter:active{
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/tv_bnt_down.png');
+}
+
+.btn-youtube{
+	left: 920px;
+	top:500px;
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/ut_bnt.png');	
+}
+.btn-youtube:hover{
+
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/ut_bnt_hover.png');	
+}
+.btn-youtube:active{
+
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/ut_bnt_down.png');	
+}
+
