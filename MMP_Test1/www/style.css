@@ -2,10 +2,66 @@ body,html {
     width: 1024px;
     min-width: 480px;
 
-    height: 800px;
+    height: 590px;
     min-height: 300px;
 
     padding: 0px;
     margin: 0px;
     overflow: hidden;
+  
+    background-color: #464646;
+    background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/contanter_background.png');
+	background-repeat:no-repeat;
+}
+
+.col-md-7{
+	height: 300px;
+	width: 570px;
+
+}
+
+.lazyOwl .img-responsive{
+	height: 300px;
+	width: 570px;
+}
+
+.owl-wrapper-outer{
+	
+	margin-top: 56px;
+	margin-left: 15px;
+	height: 300px;
+	width: 570px;
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/carosel-box_03.png');
+	background-size:575px 310px;
+	background-repeat:no-repeat;
+	
+}
+
+.active span { 
+background: #a90641 !important;
+border: 2px solid gray; 
+}
+
+
+.button{
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/play_bnt.png');
+	}
+
+.bnt .btn-default{
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/play_bnt.png');
+	}
+
+
+.news_contanter{
+	height: 120px;
+	margin-left: 15px;
+}
+
+.footer {
+	
+	margin-left: 15px;
+	height: 95px;
+	background-image:url('B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/footer.png');
+	background-repeat:no-repeat;
+
 }

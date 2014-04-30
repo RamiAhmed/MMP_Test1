@@ -28,13 +28,14 @@
             <!-- carousel -->
             <div class="owl-carousel">
                 <div>
-                    Slide 1
+                    <img class="lazyOwl img-responsive" src="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/blog_pic_temp.jpg" style="display: block;">
+                    
                 </div>
                 <div>
-                    Slide 2
+                    <img class="lazyOwl img-responsive" src="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/Title_1024.jpg" style="display: block;">
                 </div>
                 <div>
-                    Slide 3
+                    <img class="lazyOwl img-responsive" src="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/pikeman.jpg" style="display: block;">
                 </div>
             </div>
 
@@ -67,7 +68,9 @@
                 autoplay: 9000,
                 stopOnHover: true,
                 navigation: false,
-                responsive: false,
+                responsive: true,
+                responsiveRefreshRate: 1000,
+                responsiveBaseWidth: ".col-md-7",
                 lazyLoad: false,
                 });
         });
@@ -79,5 +82,29 @@
         }
     </script>
 
+    <div class ="news_contanter">
+         <li>
+            <a href="news">news</a>
+        </li>
+        <li>
+            <a href="patch notes">patch notes</a>
+        </li>
+
+    </div>
+
 </body>
+
+<footer class="footer">
+
+    <ul class = "opt option-bar"> 
+        <li>
+            <a href="option">option</a>
+        </li>
+        <li>
+            <a href="manul">manul</a>
+        </li>
+
+
+</footer>
+
 </html>
