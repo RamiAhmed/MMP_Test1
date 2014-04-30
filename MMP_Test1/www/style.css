@@ -8,32 +8,4 @@ body,html {
     padding: 0px;
     margin: 0px;
     overflow: hidden;
-
-    background-color: rgb(255, 245, 240);
-}
-
-h1, h2, h3, h4 {
-    display: block;
-    margin: 0px auto;
-    width: auto;
-    text-align: center;
-}
-
-.container {
-    height: 100%;
-    width: 80%;
-    padding: 10px;
-    margin: 10px auto;
-    overflow: hidden;
-
-    background-color: rgb(240, 245, 245);
-}
-
-footer {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    display: block;
-    padding: 5px;
 }

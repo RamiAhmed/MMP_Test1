@@ -1,12 +1,20 @@
 <!doctype html>
 <html>
-    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" charset="utf-8">
+
 <head>
 
     <title>Right to Rule 0.0.2 - Launcher</title>
 
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" charset="utf-8" />
 
+    <!-- Basic stylesheet -->
+    <link rel="stylesheet" href="./owl-carousel/owl.carousel.css" type="text/css" charset="utf-8" />
 
+     <!-- Default Theme -->
+    <link rel="stylesheet" href="./owl-carousel/owl.theme.css" type="text/css" charset="utf-8" />
+
+    <!-- Our own custom stylesheet -->
     <link rel="stylesheet" href="./style.css" type="text/css" charset="utf-8" />
 
 </head>
@@ -14,26 +22,47 @@
 
 <body>
 
-    <div id="main_content_container" class="container">
-        <h1>Right to Rule 0.0.2</h1>
+    <div class="row">
+        <div class="col-md-7">
 
-        <p>Hello world!!</p>
+            <!-- carousel -->
+            <div class="owl-carousel">
+                <div>
+                    Slide 1
+                </div>
+                <div>
+                    Slide 2
+                </div>
+                <div>
+                    Slide 3
+                </div>
+            </div>
 
-        <a type="button" class="btn btn-default" href="javascript:doStartGame()">START GAME</a>
+        </div>
 
-        <footer>
-            <p class="text-center text-muted">A game by Alpha Stage Studios - <span class="text-info">www.AlphaStageStudios.com</span></p>
-        </footer>
+        <div class="col-md-5">
 
+            <!-- button -->
+            <a type="button" class="btn btn-default" href="javascript:doStartGame()">START GAME</a>
+
+        </div>
     </div>
 
+    <!-- Load javascript files at bottom for optimization -->
+
+    <!-- jQuery 2 -->
     <script src="./js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
 
+    <!-- Bootstrap javascript -->
     <script src="./js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 
+    <!-- Include Owl carousel js plugin -->
+    <script src="./owl-carousel/owl.carousel.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Our own custom javascript -->
     <script language="javascript" type="text/javascript">
         $(function() {
-            //$(".container").append("<p>Hello from jQuery2</p>");
+            $(".owl-carousel").owlCarousel();
         });
 
         function doStartGame() {
