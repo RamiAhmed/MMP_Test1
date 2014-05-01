@@ -16,6 +16,8 @@ namespace MMP_Test1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private String _browserUrlToOpen = "";
+
         public MainWindow() {
             InitializeComponent();
         }
@@ -57,51 +59,10 @@ namespace MMP_Test1
                     // by JavaScript to have the native app perform some heavy work.
                     // (See: /web/index.html)
                     app.Bind("startGame", false, StartGame);
-                }
 
-                JSObject web = webControl.CreateGlobalJavascriptObject("external.web");
-
-                if (web == null)
-                    return;
-
-                using (web)
-                {
-                    web.Bind("startBrowser", false, StartBrowser);
+                    app.Bind("startBrowser", false, StartBrowser);
                 }
             }
-        }
-
-        private void StartBrowser(object sender, JavascriptMethodEventArgs e) {
-            // Must be a function object.
-            if (!e.Arguments[0].IsObject)
-                return;
-
-            // You can cache this callback and call it only when your application 
-            // has performed all work necessary and has a result ready to send.
-            // Note that this callback object is valid for as long as the current 
-            // page is loaded. A navigation will invalidate it!
-            JSObject callbackArg = e.Arguments[0];
-
-            // Make sure it's a function object.
-            if (!callbackArg.HasMethod("call"))
-                return;
-
-            // See it!
-            Debug.Print(callbackArg.ToString());
-
-            // You need to copy the object if you intend to cache it. The original
-            // object argument passed to the handler is destroyed by default by 
-            // native Awesomium, when the handler returns. A copy will keep it alive.
-            JSObject callback = callbackArg.Clone();
-
-            // Perform your heavy work.
-            Task.Factory.StartNew(
-                (Func<object, string>)PerformBrowserOpen, callback).ContinueWith(
-                /* Send a response when complete. */
-                SendResponse,
-                /* Make sure the response is sent on the 
-                 * initial thread. */
-                TaskScheduler.FromCurrentSynchronizationContext());
         }
 
         private void StartGame(object sender, JavascriptMethodEventArgs e) {
@@ -137,12 +98,61 @@ namespace MMP_Test1
                 TaskScheduler.FromCurrentSynchronizationContext());
         }
 
-        private string PerformBrowserOpen(object callback) {
-            Debug.Print("Callback: " + callback.ToString());
-            //Debug.Print("Callback url: " + callback.url.ToString());
 
+        private void StartBrowser(object sender, JavascriptMethodEventArgs e)
+        {
+            Debug.Print("StartBrowser, sender: " + sender.ToString());
+
+            // Must be a function object.
+            if (!e.Arguments[0].IsObject)
+            {
+                Debug.Print("Argument 0 must be an object");
+                return;
+            }
+
+            // You can cache this callback and call it only when your application 
+            // has performed all work necessary and has a result ready to send.
+            // Note that this callback object is valid for as long as the current 
+            // page is loaded. A navigation will invalidate it!
+            JSObject callbackArg = e.Arguments[0];
+
+            // Make sure it's a function object.
+            if (!callbackArg.HasMethod("call"))
+            {
+                Debug.Print("callbackArg must be a function object");
+                return;
+            }
+
+            if (!e.Arguments[1].IsString)
+            {
+                Debug.Print("Argument 0 must be a string");
+                return;
+            }
+
+
+            this._browserUrlToOpen = e.Arguments[1].ToString();
+            Debug.Print("Setting browser url to open: " + this._browserUrlToOpen);
+
+
+            // You need to copy the object if you intend to cache it. The original
+            // object argument passed to the handler is destroyed by default by 
+            // native Awesomium, when the handler returns. A copy will keep it alive.
+            JSObject callback = callbackArg.Clone();
+
+            // Perform your heavy work.
+            Task.Factory.StartNew(
+                (Func<object, string>)PerformBrowserOpen, callback).ContinueWith(
+                /* Send a response when complete. */
+                SendResponse,
+                /* Make sure the response is sent on the 
+                 * initial thread. */
+                TaskScheduler.FromCurrentSynchronizationContext());
+        }
+
+        private string PerformBrowserOpen(object callback) {
             try {
-                Process.Start(callback.ToString());
+                Debug.Print("Opening browser on url: " + this._browserUrlToOpen);
+                Process.Start(this._browserUrlToOpen);
             }
             catch (System.ComponentModel.Win32Exception noBrowser) {
                 Debug.Print("PerformBrowserOpen ERROR: " + noBrowser.Message.ToString());
@@ -153,9 +163,8 @@ namespace MMP_Test1
                 return "error";
             }
 
-
             Thread.Sleep(500);
-            return "success";
+            return "success: " + _browserUrlToOpen;
         }
 
         private string PerformWork(object callback) {
