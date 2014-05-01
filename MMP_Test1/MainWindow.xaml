@@ -40,7 +40,7 @@
 
     <Border SnapsToDevicePixels="True" BorderThickness="1" BorderBrush="Black">
         <Border.Background>
-            <SolidColorBrush Color="White" Opacity="1" />
+            <SolidColorBrush Color="White" Opacity="0" />
         </Border.Background>
         <awe:WebControl 
             Name="webControl" 

@@ -52,11 +52,12 @@ namespace MMP_Test1
                     return;
 
                 using (app)
+                {
                     // Create and bind to an asynchronous custom method. This is called
                     // by JavaScript to have the native app perform some heavy work.
                     // (See: /web/index.html)
                     app.Bind("startGame", false, StartGame);
-                    
+                }
 
                 JSObject web = webControl.CreateGlobalJavascriptObject("external.web");
 
@@ -64,7 +65,9 @@ namespace MMP_Test1
                     return;
 
                 using (web)
-                    web.Bind("startBrowser", false, StartBrowser); 
+                {
+                    web.Bind("startBrowser", false, StartBrowser);
+                }
             }
         }
 

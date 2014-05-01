@@ -109,8 +109,8 @@
                 responsive: true,
                 responsiveRefreshRate: 1000,
                 responsiveBaseWidth: ".col-md-7",
-                lazyLoad: false,
-                });
+                lazyLoad: true,
+            });
         });
 
         function doStartGame() {
@@ -120,6 +120,7 @@
         }
 
         function doStartBrowser(url) {
+            console.log("doStartBrowser: " + url);
             external.web.startBrowser(function(result) {
                 console.log(result.toString());
             }, {'url':url});
