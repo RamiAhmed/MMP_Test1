@@ -138,7 +138,7 @@ border: 2px solid gray;
 }
 
 .btn-facebook:hover{
-	background-image:url('./fb_bnt_hover.png');
+	background-image:url('./image/fb_bnt_hover.png');
 }
 
 .btn-facebook:active{
