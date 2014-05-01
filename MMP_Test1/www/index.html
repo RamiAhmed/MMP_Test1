@@ -6,42 +6,42 @@
     <title>Right to Rule 0.0.2 - Launcher</title>
 
     <!-- Bootstrap stylesheet -->
-    <link rel="stylesheet" href="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/css/bootstrap.min.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" charset="utf-8" />
 
     <!-- Basic stylesheet -->
-    <link rel="stylesheet" href="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/owl-carousel/owl.carousel.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="./owl-carousel/owl.carousel.css" type="text/css" charset="utf-8" />
 
      <!-- Default Theme -->
-    <link rel="stylesheet" href="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/owl-carousel/owl.theme.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="./owl-carousel/owl.theme.css" type="text/css" charset="utf-8" />
 
     <!-- Our own custom stylesheet -->
-    <link rel="stylesheet" href="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="./style.css" type="text/css" charset="utf-8" />
 
 </head>
 
 
-<header class="header">
-    <p>Right to Rule 0.0.2 </p>
-</header>
 
 <body>
 
+    <header class="header">
+    <p>Right to Rule 0.0.2 </p>
+    </header>
 
     <div class="row">
         <div class="col-md-7">
 
-            <img class="owl-wrapper-box" src="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/carosel-box_03.png">
+            <img class="owl-wrapper-box" src="./image/carosel-box_03.png">
                 <!-- carousel -->
                 <div class="owl-carousel">
                     <div>
-                        <img class="lazyOwl img-responsive" src="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/blog_pic_temp.jpg" style="display: block;">
-                        
+                        <img class="lazyOwl img-responsive" src="./image/blog_pic_temp.jpg" style="display: block;">
+
                     </div>
                     <div>
-                        <img class="lazyOwl img-responsive" src="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/Title_1024.jpg" style="display: block;">
+                        <img class="lazyOwl img-responsive" src="./image/Title_1024.jpg" style="display: block;">
                     </div>
                     <div>
-                        <img class="lazyOwl img-responsive" src="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/pikeman.jpg" style="display: block;">
+                        <img class="lazyOwl img-responsive" src="./image/pikeman.jpg" style="display: block;">
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@
 
         <div class="col-md-5">
 
-            <img class ="logo" src="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/image/r2r.png">
+            <img class ="logo" src="./image/r2r.png">
 
             <!-- button -->
             <a type="button" class="btn btn-play" href="javascript:doStartGame()"></a>
@@ -58,21 +58,50 @@
         </div>
     </div>
 
+
+    <div class ="news_contanter">
+         <li>
+            <a href="news">news</a>
+        </li>
+        <li>
+            <a href="patch notes">patch notes</a>
+        </li>
+
+    </div>
+
+
+
+    <footer class="footer">
+
+        <a type="button" class="foot_btn btn-cog" href="/options"></a>
+
+        <a type="button" class="foot_btn btn-book" href="/user_manul"></a>
+
+        <a type="button" class="mini-btn btn-facebook" url="javascript: doStartBrowser('https://www.facebook.com/alphastagestudios')"></a>
+
+        <a type="button" class="mini-btn btn-tvitter" url="javascript: doStartBrowser('https://twitter.com/alphastagestudios')"></a>
+
+        <a type="button" class="mini-btn btn-youtube" url="javascript: doStartBrowser('https://www.youtube.com/user/AlphaStageStudios')"></a>
+
+    </footer>
+
+
+
     <!-- Load javascript files at bottom for optimization -->
 
     <!-- jQuery 2 -->
-    <script src="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!-- Bootstrap javascript -->
-    <script src="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!-- Include Owl carousel js plugin -->
-    <script src="B:/Documents/GitHub/MMP_Test1/MMP_Test1/www/owl-carousel/owl.carousel.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./owl-carousel/owl.carousel.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!-- Our own custom javascript -->
     <script language="javascript" type="text/javascript">
         $(function() {
-            $(".owl-carousel").owlCarousel({   
+            $(".owl-carousel").owlCarousel({
                 singleItem: true,
                 autoplay: 9000,
                 stopOnHover: true,
@@ -89,32 +118,16 @@
                 console.log(String(result));
             });
         }
+
+        function doStartBrowser(url) {
+            external.web.startBrowser(function(result) {
+                console.log(result.toString());
+            }, {'url':url});
+        }
     </script>
 
-    <div class ="news_contanter">
-         <li>
-            <a href="news">news</a>
-        </li>
-        <li>
-            <a href="patch notes">patch notes</a>
-        </li>
-
-    </div>
 
 </body>
 
-<footer class="footer">
-
-     <a type="button" class="foot_btn btn-cog" href="/options"></a>
-
-     <a type="button" class="foot_btn btn-book" href="/user_manul"></a>
-       
-     <a type="button" class="mini-btn btn-facebook" url="https://www.facebook.com/alphastagestudios"></a>
-
-     <a type="button" class="mini-btn btn-tvitter" url="https://twitter.com/alphastagestudios"></a>
-
-     <a type="button" class="mini-btn btn-youtube" url="https://www.youtube.com/user/AlphaStageStudios"></a>
-
-</footer>
 
 </html>

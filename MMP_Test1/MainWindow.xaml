@@ -6,7 +6,7 @@
     xmlns:data="http://schemas.awesomium.com/winfx/data"
     xmlns:awe="http://schemas.awesomium.com/winfx"
     xmlns:local="clr-namespace:MMP_Test1"
-    Height="800" 
+    Height="590" 
     Width="1024" 
     MinWidth="480"
     MinHeight="300"
