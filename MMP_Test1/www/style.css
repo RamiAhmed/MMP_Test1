@@ -1,196 +1,248 @@
 body,html {
+    display: block;
     width: 1024px;
-    min-width: 480px;
-
     height: 590px;
-    min-height: 300px;
 
     padding: 0px;
     margin: 0px;
     overflow: hidden;
+}
 
-    
+#main-container {
+    width: 1024px;
+    height: 590px;
+
     background-image:url('./image/contanter_background.png');
-	background-repeat:no-repeat;
+    background-repeat:no-repeat;
+    margin: 0px auto;
+    padding: 15px;
 }
 
-h1{
-	margin: 0px;
-	padding: 0px;
-	font-size: 20px;
-	color: #fcfad0;
+header, .header > h1 {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: #fcfad0;
 }
 
-p{
-	color: #5b605f;
-}
-.header{
-	position: fixed;
-	left:35px;
-	top:15px;
+.owl-wrapper-outer {
+    height: 310px;
+    border: 5px solid #5b605f;
+    border-left: none;
+    border-radius: 5px;
 }
 
-.owl-wrapper-box{
-	position: fixed;
-	left :15px;
-	top: 55px;
-	height: 310px;
-	width: 600px;
-
+.owl-content-wrapper {
+    display: block;
+    width: 590px;
+    height: 310px;
+    margin-top: 15px;
 }
 
-.owl-wrapper-outer{
-	position: fixed;
-	left :15px;
-	top: 55px;
-	height: 300px;
-	width: 400px;
+.owl-item > img {
+    display: block;
+    margin: 0px auto;
+    height: auto;
+    width: auto;
 }
 
-.active span {
-background: #a90641 !important;
-border: 2px solid gray;
+.owl-content-wrapper .active span {
+    background-color: #a90641 !important;
+    border: 2px solid #5b605f;
+}
+
+.owl-content-wrapper span {
+    background-color: #464646 !important;
+    border: 2px solid #5b605f;
 }
 
 .logo {
-	position: fixed;
-	top: 140px;
-	left: 675px;
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 30px;
 }
 
 .btn-play{
-	height: 60px;
-	width: 240px;
-	position: fixed;
-	top: 280px;
-	left: 685px;
-	background-image:url('./image/play_bnt.png');
+    display: block;
+    margin: 75px auto;
+    height: 60px;
+    width: 240px;
+    background-image:url('./image/play_bnt.png');
 }
 .btn-play:hover{
-	background-image:url('./image/play_bnt_hover.png');
+    background-image:url('./image/play_bnt_hover.png');
 }
 .btn-play:active{
-	background-image:url('./image/play_bnt_down.png');
+    background-image:url('./image/play_bnt_down.png');
 }
 
-.news_contanter{
-	position: fixed;
-	top:380px;
-	height: 120px;
-	margin-left: 15px;
+
+
+#news-container {
+    display: block;
+    padding-top: 20px;
 }
 
-#tool_tip {
-	position: fixed;
-	top: 440px;
-	margin-left: 15px;
+
+footer, .footer {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+
+    background-image:url('./image/footer.png');
+    background-repeat: no-repeat;
+    height: 95px;
+    width: 1024px;
 }
 
-.tool_text{
-	position: fixed;
-	top: 450px;
-	margin-left: 15px;
-	left: -10000px;
+
+.footer-buttons {
+    display: block;
+    margin-top: 20px;
 }
 
-#Option-text:hover{
-	left: 0px;
+.footer-buttons a {
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 70px;
+    display: inline-block;
+    text-decoration: none;
 }
 
-.footer {
-	position: fixed;
-	top:480px;
-	height: 95px;
-	width: 992px;
-	margin-left: 15px;
-	background-image:url('./image/footer.png');
-	background-repeat:no-repeat;
-
+.footer-buttons a > .tool-tip,
+.footer-buttons a > .tool-tip-pointer {
+    display: none;
+}
+.footer-buttons a:hover > .tool-tip,
+.footer-buttons a:hover > .tool-tip-pointer {
+    display: block;
 }
 
-.foot_btn{
-	height: 65px;
-	width: 70px;
-	position: fixed;
-	background-repeat:no-repeat;
+.btn-cog {
+    background-image:url('./image/cog_bnt.png');
+}
+.btn-cog:hover {
+    background-image:url('./image/cog_bnt_hover.png');
+}
+.btn-cog:active {
+    background-image:url('./image/cog_bnt_down.png');
 }
 
-.btn-cog{
-
-	left: 400px;
-	top:500px;
-	background-image:url('./image/cog_bnt.png');
+.btn-book {
+    background-image:url('./image/book_bnt.png');
+}
+.btn-book:hover {
+    background-image:url('./image/book_bnt_hover.png');
+}
+.btn-book:active {
+    background-image:url('./image/book_bnt_down.png');
 }
 
-.btn-cog:hover{
-
-	background-image:url('./image/cog_bnt_hover.png');
+.footer-game-buttons {
+    display: block;
+    position: relative;
+    margin: 0px auto;
+    height: auto;
+    width: 150px;
+}
+.footer-game-buttons > a {
+    position: relative;
+    display: inline-block;
+    background-repeat:no-repeat;
 }
 
-.btn-cog:active{
-
-	background-image:url('./image/cog_bnt_down.png');
+.footer-game-buttons > a .tool-tip-pointer {
+    bottom: 65px;
+}
+.footer-game-buttons > a:hover .tool-tip-pointer {
+    left: 10px;
 }
 
-.btn-book{
-	left: 480px;
-	top:500px;
-	background-image:url('./image/book_bnt.png');
+.footer-social-buttons {
+    display: block;
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
 }
 
-.btn-book:hover{
-	background-image:url('./image/book_bnt_hover.png');
-}
-.btn-book:active{
-	background-image:url('./image/book_bnt_down.png');
-}
-
-.mini-btn{
-	height: 55px;
-	width: 55px;
-	position: fixed;
-	background-repeat:no-repeat;
+.footer-social-buttons > a {
+    position: relative;
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    background-repeat:no-repeat;
+    float: right;
+    margin-left: 10px;
 }
 
-.btn-facebook{
-	left: 800px;
-	top:500px;
-	background-image:url('./image/fb_bnt.png');
+.footer-social-buttons > a:hover .tool-tip-pointer {
+    left: 7px;
 }
 
-.btn-facebook:hover{
-	background-image:url('./image/fb_bnt_hover.png');
+.btn-facebook {
+    background-image:url('./image/fb_bnt.png');
+}
+.btn-facebook:hover {
+    background-image:url('./image/fb_bnt_hover.png');
+}
+.btn-facebook:active {
+    background-image:url('./image/fb_bnt_down.png');
 }
 
-.btn-facebook:active{
-	background-image:url('./image/fb_bnt_down.png');
+.btn-tvitter {
+    background-image:url('./image/tv_bnt.png');
+}
+.btn-tvitter:hover {
+    background-image:url('./image/tv_bnt_hover.png');
+}
+.btn-tvitter:active {
+    background-image:url('./image/tv_bnt_down.png');
 }
 
-.btn-tvitter{
-	left: 860px;
-	top:500px;
-	background-image:url('./image/tv_bnt.png');
+.btn-youtube {
+    background-image:url('./image/ut_bnt.png');
+}
+.btn-youtube:hover {
+    background-image:url('./image/ut_bnt_hover.png');
+}
+.btn-youtube:active {
+    background-image:url('./image/ut_bnt_down.png');
 }
 
-.btn-tvitter:hover{
-	background-image:url('./image/tv_bnt_hover.png');
+
+
+.tool-tip {
+    width: 975px;
+    position: fixed;
+    top: 350px;
+    left: 25px;
+
+    padding: 7px;
+    padding-right: 15px;
+
+    border-radius: 10px;
+    background-color: #fcfad0;
+    border: 0px;
+
+    cursor: normal;
+
+    display: none;
 }
 
-.btn-tvitter:active{
-	background-image:url('./image/tv_bnt_down.png');
-}
 
-.btn-youtube{
-	left: 920px;
-	top:500px;
-	background-image:url('./image/ut_bnt.png');
-}
-.btn-youtube:hover{
+.tool-tip-pointer {
+    background-color: transparent;
+    background: url('./image/tool_tip_pointer.png');
+    background-repeat: no-repeat;
 
-	background-image:url('./image/ut_bnt_hover.png');
-}
-.btn-youtube:active{
+    width: 43px;
+    height: 24px;
 
-	background-image:url('./image/ut_bnt_down.png');
-}
+    position: absolute;
+    bottom: 55px;
 
+    display: none;
+}

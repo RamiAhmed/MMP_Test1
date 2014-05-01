@@ -23,88 +23,116 @@
 
 <body>
 
-    <header class="header">
-    <h1>Right to Rule 0.0.2 </h1>
-    </header>
+    <div id="main-container">
 
-    <div class="row">
-        <div class="col-md-7">
+        <header class="header">
+            <h1>Right to Rule version 0.0.2</h1>
+        </header>
 
-            <img class="owl-wrapper-box" src="./image/carosel-box_03.png">
-                <!-- carousel -->
-                <div class="owl-carousel">
-                    <div>
-                        <img class="lazyOwl img-responsive" src="./image/blog_pic_temp.jpg" style="display: block;">
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-7">
+                    <div class="owl-content-wrapper">
+                        <!-- carousel -->
+                        <div class="owl-carousel">
+                            <div class="owl-item">
+                                <img class="lazyOwl img-responsive" src="./image/blog_pic_temp.jpg">
+                            </div>
 
+                            <div class="owl-item">
+                                <img class="lazyOwl img-responsive" src="./image/Title_1024.jpg">
+                            </div>
+
+                            <div class="owl-item">
+                                <img class="lazyOwl img-responsive" src="./image/pikeman.jpg">
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <img class="lazyOwl img-responsive" src="./image/Title_1024.jpg" style="display: block;">
-                    </div>
-                    <div>
-                        <img class="lazyOwl img-responsive" src="./image/pikeman.jpg" style="display: block;">
-                    </div>
+                </div>
+
+                <div class="col-xs-5">
+                    <img class="logo" src="./image/r2r.png">
+
+                    <!-- button -->
+                    <a type="button" class="btn btn-play" href="javascript:doStartGame()"></a>
                 </div>
             </div>
 
-        </div>
 
-        <div class="col-md-5">
+            <article id="news-container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <p class="text-center">
+                            <a href="javascript:doStartBrowser('http://alphastagestudios.com/blog/')">News &amp; Blog</a>
+                        </p>
+                    </div>
+                    <div class="col-xs-6">
+                        <p class="text-center">
+                            <a href="javascript:doStartBrowser('http://alphastagestudios.com/prototype/')">Prototype Site</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
 
-            <img class ="logo" src="./image/r2r.png">
 
-            <!-- button -->
-            <a type="button" class="btn btn-play" href="javascript:doStartGame()"></a>
+        <footer class="footer">
+            <div class="footer-buttons">
 
-        </div>
+                <div class="footer-game-buttons">
+                    <a type="button" class="btn-cog" href="javascript:doStartBrowser('http://alphastagestudios.com/games/')" title="Options">
+                        <div class="tool-tip">
+                            Options, here you can change the setting for the game to fit you computer
+                        </div>
+                        <div class="tool-tip-pointer">
+                        </div>
+                    </a>
+
+                    <a type="button" class="btn-book" href="javascript:doStartBrowser('http://alphastagestudios.com/prototype/')">
+                        <div class="tool-tip">
+                            Manuel, here you see how to play the game,and helpful shortcuts
+                        </div>
+                        <div class="tool-tip-pointer">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="footer-social-buttons">
+                    <a type="button" class="btn-facebook" href="javascript:doStartBrowser('https://www.facebook.com/alphastagestudios')">
+                        <div class="tool-tip">
+                            Follow the game on Alpha stage studios Facebook page
+                        </div>
+                        <div class="tool-tip-pointer">
+                        </div>
+                    </a>
+
+                    <a type="button" class="btn-tvitter" href="javascript:doStartBrowser('https://twitter.com/alphastagestudios')">
+                        <div class="tool-tip">
+                            Follow the game on Alpha stage studios Twitter page
+                        </div>
+                        <div class="tool-tip-pointer">
+                        </div>
+                    </a>
+
+                    <a type="button" class="btn-youtube" href="javascript:doStartBrowser('https://www.youtube.com/user/AlphaStageStudios')">
+                        <div class="tool-tip">
+                        Follow the game on Alpha stage studios Youtube page
+                        </div>
+                        <div class="tool-tip-pointer">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+
     </div>
 
 
-    <div class ="news_contanter">
-         <li>
-            <a href="news">news</a>
-        </li>
-        <li>
-            <a href="patch notes">patch notes</a>
-        </li>
-
-    </div>
-
-    <div id = "tool_tip">
-
-        <img id ="tool_tip_pic" src ="./image/tool_tip_pic.png">
-
-        <p class= "tool_text Option-text"> Options, here you can change the setting for the game to fit you computer </p>
-
-        <p class= "tool_text manuel-text"> manuel, here you see how to play the game,and helpful shortcuts </p>
-
-        <p class= "tool_text fb-btn-text"> follow the game on apha stage studios facebook page </p>
-
-        <p class= "tool_text tv-btn-text">follow the game on apha stage studios tvitter page  </p>
-
-        <p class= "tool_text ut-btn-text"> follow the game on apha stage studios you tube page  </p>
-
-    </div>
-
-    <div id ="tool-tip-pointer">
-        <img id ="tool_tip_pic" src ="./image/tool_tip_pointer.png">
-
-    </div> 
 
 
 
-    <footer class="footer">
 
-        <a type="button" class="foot_btn btn-cog" href="/options" title ="options"></a>
-
-        <a type="button" class="foot_btn btn-book" href="/user_manul"></a>
-
-        <a type="button" class="mini-btn btn-facebook" href="javascript:doStartBrowser('https://www.facebook.com/alphastagestudios')"></a>
-
-        <a type="button" class="mini-btn btn-tvitter" href="javascript:doStartBrowser('https://twitter.com/alphastagestudios')"></a>
-
-        <a type="button" class="mini-btn btn-youtube" href="javascript:doStartBrowser('https://www.youtube.com/user/AlphaStageStudios')"></a>
-
-    </footer>
 
 
 
@@ -129,7 +157,7 @@
                 navigation: false,
                 responsive: true,
                 responsiveRefreshRate: 1000,
-                responsiveBaseWidth: ".col-md-7",
+                responsiveBaseWidth: ".owl-content-wrapper",
                 lazyLoad: true,
             });
         });
@@ -151,6 +179,4 @@
 
 
 </body>
-
-
 </html>

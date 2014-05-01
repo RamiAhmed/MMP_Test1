@@ -6,10 +6,8 @@
     xmlns:data="http://schemas.awesomium.com/winfx/data"
     xmlns:awe="http://schemas.awesomium.com/winfx"
     xmlns:local="clr-namespace:MMP_Test1"
-    Height="590" 
-    Width="1024" 
-    MinWidth="480"
-    MinHeight="300"
+    Height="475px" 
+    Width="820px"
     Title="{Binding Title, ElementName=webControl}"
     WindowStartupLocation="CenterScreen"
     Background="{x:Null}"
@@ -38,10 +36,7 @@
         
     </Window.Resources>
 
-    <Border SnapsToDevicePixels="True" BorderThickness="1" BorderBrush="Black">
-        <Border.Background>
-            <SolidColorBrush Color="White" Opacity="0" />
-        </Border.Background>
+    <Border>
         <awe:WebControl 
             Name="webControl" 
             WebSession="{Binding Source={StaticResource mySession}}" 
