@@ -7,13 +7,13 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MMP_Test1")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Right to Rule Launcher")]
+[assembly: AssemblyDescription("Right to Rule 0.0.2 Launcher")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Alpha Stage studios")]
 [assembly: AssemblyProduct("MMP_Test1")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Right to Rule")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
