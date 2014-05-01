@@ -6,6 +6,8 @@ body,html {
     padding: 0px;
     margin: 0px;
     overflow: hidden;
+
+    background-color: transparent;
 }
 
 #main-container {
@@ -239,7 +241,7 @@ footer, .footer {
 
 .tool-tip-pointer {
     background-color: transparent;
-    background: url('./image/tool_tip_pointer.png');
+    background-image: url('./image/tool_tip_pointer.png');
     background-repeat: no-repeat;
 
     width: 43px;
@@ -249,4 +251,43 @@ footer, .footer {
     bottom: 55px;
 
     display: none;
+}
+
+
+#close-button {
+	display: block;
+	position: absolute;
+	right: 25px;
+	top: 5px;
+	margin: 5px;
+
+	width: 27px;
+	height: 26px;
+	overflow: hidden;
+
+	cursor: pointer;
+}
+
+#close-button > a {
+	display: block;
+	position: relative;
+
+	background-image: url('./image/close_btn.png');
+	background-repeat: no-repeat;
+
+	width: 27px;
+	height: 26px;
+
+	padding: 0px;
+	margin: 0px auto;
+	text-align: center;
+
+}
+
+#close-button:hover > a {
+	background-image: url('./image/close_btn_hover.png');
+}
+
+#close-button:active > a {
+	background-image: url('./image/close_btn_down.png');
 }
