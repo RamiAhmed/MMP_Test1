@@ -9,12 +9,20 @@ body,html {
     margin: 0px;
     overflow: hidden;
 
-    background-color: #464646;
+    
     background-image:url('./image/contanter_background.png');
 	background-repeat:no-repeat;
 }
-p{
+
+h1{
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
 	color: #fcfad0;
+}
+
+p{
+	color: #5b605f;
 }
 .header{
 	position: fixed;
@@ -61,7 +69,6 @@ border: 2px solid gray;
 .btn-play:hover{
 	background-image:url('./image/play_bnt_hover.png');
 }
-
 .btn-play:active{
 	background-image:url('./image/play_bnt_down.png');
 }
@@ -71,6 +78,23 @@ border: 2px solid gray;
 	top:380px;
 	height: 120px;
 	margin-left: 15px;
+}
+
+#tool_tip {
+	position: fixed;
+	top: 440px;
+	margin-left: 15px;
+}
+
+.tool_text{
+	position: fixed;
+	top: 450px;
+	margin-left: 15px;
+	left: -10000px;
+}
+
+#Option-text:hover{
+	left: 0px;
 }
 
 .footer {
@@ -117,12 +141,9 @@ border: 2px solid gray;
 .btn-book:hover{
 	background-image:url('./image/book_bnt_hover.png');
 }
-
 .btn-book:active{
 	background-image:url('./image/book_bnt_down.png');
 }
-
-
 
 .mini-btn{
 	height: 55px;
