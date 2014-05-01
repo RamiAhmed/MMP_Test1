@@ -36,7 +36,7 @@
         
     </Window.Resources>
 
-    <Border>
+    <Border SnapsToDevicePixels="True">
         <awe:WebControl 
             Name="webControl" 
             WebSession="{Binding Source={StaticResource mySession}}" 

@@ -85,6 +85,10 @@ header, .header > h1 {
     padding-top: 20px;
 }
 
+#news-container  a {
+	font-size: 18px;
+}
+
 
 footer, .footer {
     position: fixed;
@@ -217,7 +221,7 @@ footer, .footer {
 .tool-tip {
     width: 975px;
     position: fixed;
-    top: 350px;
+    bottom: 110px;
     left: 25px;
 
     padding: 7px;
