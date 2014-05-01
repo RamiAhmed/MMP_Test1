@@ -42,6 +42,7 @@
             WebSession="{Binding Source={StaticResource mySession}}" 
             Source="asset://local/www/index.html"             
             IsTransparent="True"
+            SnapsToDevicePixels="True"  
             NativeViewInitialized="webControl_NativeViewInitialized" 
             ConsoleMessage="webControl_ConsoleMessage"
             WindowClose="webControl_WindowClose" />
